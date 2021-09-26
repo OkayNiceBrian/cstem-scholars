@@ -1,7 +1,6 @@
 version: "3.7"
 
 services:
-
   website:
     container_name: webserver
     depends_on:
@@ -25,10 +24,10 @@ services:
       - MYSQL_DATABASE=researchGrant
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
       - MYSQL_ALLOW_EMPTY_PASSWORD=no
-      - MYSQL_USER=dbUser
-      - MYSQL_PASSWORD=superSecret
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=
     volumes:
-    - dbData:/var/lib/mysql
+      - dbData:/var/lib/mysql
     ports:
       - "3306:3306"
     networks:
