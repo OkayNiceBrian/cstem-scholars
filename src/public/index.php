@@ -26,9 +26,7 @@
             </div>
         </div>
         <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle" style="bottom:-16px">
-            <a href="login.php?id=student" class="w3-bar-item w3-button" id="student">Student Application</a>
-            <a href="login.php?id=advisor" class="w3-bar-item w3-button" id="advisor">Faculty Advisor</a>
-            <a href="login.php?id=reviewer" class="w3-bar-item w3-button" id="reviewer">Faculty Reviewer</a>
+            <a href="login.php?id=student" class="w3-bar-item w3-button" id="student">Login</a>
         </div>
     </header>
     <!-- Container (About Section) -->
