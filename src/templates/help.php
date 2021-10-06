@@ -1,3 +1,7 @@
+<?php
+$title = "Help";
+?>
+
 <h2>User roles</h2>
 
 <dl>
@@ -39,4 +43,3 @@
         further instructions.
     </li>
 </ol>
-
