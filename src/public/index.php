@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle" style="bottom:-16px">
-            <a href="login.php?id=student" class="w3-bar-item w3-button" id="student">Login</a>
+            <a href="login.php?id=student" class="w3-bar-item w3-button" id="student">LOGIN</a>
         </div>
     </header>
     <!-- Container (About Section) -->
