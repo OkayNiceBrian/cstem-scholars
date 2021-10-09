@@ -9,8 +9,8 @@ $c = new ModelController(Application::class);
 User::authorize(
     'advisor',
     $c->action() == 'index' ||
-    ($c->model()->advisorEmail == $email &&
-        $c->model()->status == 'submitted')
+        ($c->model()->advisorEmail == $email &&
+            $c->model()->status == 'submitted')
 );
 
 function UniqueRandomNumbersWithinRange($min, $max, $quantity)
@@ -53,7 +53,8 @@ if ($c->action() == 'update' && HTTP::post('buttonName') == "accept") {
                 'periodID' => $period->id,
                 'reviewerID' => $reviewers[$i]->email,
                 'applicationID' => $application->id,
-            ], true
+            ],
+            true
         );
         $review->save(false);
 
@@ -102,7 +103,7 @@ elseif ($c->action() == 'update' && HTTP::post('buttonName') == "reject") {
 
     $studentComment = HTTP::post('studentComment');
     if ($studentComment !== '') {
-        $studentComment = "<p>Your advisor left the following comment on it: " . e($studentComment) . "</p>";
+        $studentComment = "<p>Your advisor left the following comment on your application: " . e($studentComment) . "</p>";
     }
 
     Mail::send(
@@ -114,7 +115,7 @@ elseif ($c->action() == 'update' && HTTP::post('buttonName') == "reject") {
         )
     );
 
-    $application->status = 'rejected';
+    $application->status = 'draft';
     $application->save(false);
 
     HTTP::redirect('../advisors/applications.php');
