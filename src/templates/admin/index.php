@@ -3,6 +3,8 @@
 $title = 'Administrator Dashboard';
 $layout = 'admin/_layout.php';
 $allSet = true;
+$currentRole = "admin";
+echo template('switch_roles.php', ['currentRole' => $currentRole]);
 ?>
 
 <h1>Administrator Dashboard</h1>
