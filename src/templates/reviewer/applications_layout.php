@@ -4,16 +4,18 @@ helper('application_status_label');
 
 $title = 'Applications';
 $layout = 'admin/_layout.php';
+$currentRole = "reviewer";
+echo template('switch_roles.php', ['currentRole' => $currentRole]);
 ?>
 
 <h1>Applications</h1>
 
 <table>
     <thead>
-    <th>Student Name</th>
-    <th>Title</th>
-    <th>Advisor</th>
-    <th>Status</th>
+        <th>Student Name</th>
+        <th>Title</th>
+        <th>Advisor</th>
+        <th>Status</th>
     </thead>
 
     <?php

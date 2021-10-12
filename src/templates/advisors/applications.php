@@ -2,8 +2,11 @@
 
 $title = 'Applications';
 $layout = 'admin/_layout.php';
+$currentRole = "advisor";
+echo template('switch_roles.php', ['currentRole' => $currentRole]);
 
 helper('application_status_label');
+
 ?>
 
 <h1>Applications</h1>
@@ -11,7 +14,7 @@ helper('application_status_label');
 <?php
 if ($period == null) { ?>
     <p>There is currently no ongoing period.</p>
-    <?php
+<?php
 } else { ?>
     <table>
         <tr>
@@ -28,9 +31,9 @@ if ($period == null) { ?>
                     <td><?= HTML::link("../advisors/applications.php?id={$a->id}", e($a->title)) ?></td>
                     <td><?= applicationStatus($a) ?></td>
                 </tr>
-                <?php
+        <?php
             }
         } ?>
     </table>
-    <?php
+<?php
 } ?>
