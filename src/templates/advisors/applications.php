@@ -13,11 +13,12 @@ if ($period == null) { ?>
     <p>There is currently no ongoing period.</p>
     <?php
 } else { ?>
-    <table>
+    <table class="sortable">
         <tr>
             <th>Student Name</th>
             <th>Title</th>
             <th>Status</th>
+            <th>Date Submitted</th>
         </tr>
 
         <?php
@@ -27,6 +28,7 @@ if ($period == null) { ?>
                     <td><?= e($a->name) ?></td>
                     <td><?= HTML::link("../advisors/applications.php?id={$a->id}", e($a->title)) ?></td>
                     <td><?= applicationStatus($a) ?></td>
+                    <td>N/A</td>
                 </tr>
                 <?php
             }

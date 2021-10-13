@@ -44,6 +44,7 @@ create table `Application`
     `budgetTable`     text           null,
     `status`          varchar(30)    not null,
     `amountAwarded`   decimal(10, 2) null,
+    `date`            date           null,
     foreign key (advisorEmail) references User (email)
         on update cascade
         on delete set null,

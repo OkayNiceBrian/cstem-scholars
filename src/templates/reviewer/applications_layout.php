@@ -14,6 +14,7 @@ $layout = 'admin/_layout.php';
     <th>Title</th>
     <th>Advisor</th>
     <th>Status</th>
+    <th>Date Submitted</th>
     </thead>
 
     <?php
@@ -25,6 +26,7 @@ $layout = 'admin/_layout.php';
             <td><?= HTML::link("../reviewers/applications.php?id={$r->id}", e($a->title)) ?></td>
             <td><?= e($a->advisorName) ?></td>
             <td><?= applicationStatus($a) ?></td>
+            <td>N/A</td>
         </tr>
     <?php
     } ?>
