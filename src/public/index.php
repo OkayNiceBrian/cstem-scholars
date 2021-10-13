@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,26 +15,49 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="icon" href="favicon.png" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
+
+
 
 <!-- Navbar (sit on top) -->
 
 <!-- First Parallax Image with Logo Text -->
 <form method="POST">
     <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+
         <div class="bgimg-1 w3-display-container" id="home">
             <div class="w3-display-middle" style="white-space:nowrap;">
                 <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
                     CSTEM
-                    <span class="w3-hide-small">UNDERGRADUATE RESEARCH</span> GRANT</span>
+                <span class="w3-hide-small">UNDERGRADUATE RESEARCH</span> GRANT</span>
             </div>
         </div>
         <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle" style="bottom:-16px">
             <a href="login.php?id=student" class="w3-bar-item w3-button" id="student">Student Application</a>
             <a href="login.php?id=advisor" class="w3-bar-item w3-button" id="advisor">Faculty Advisor</a>
             <a href="login.php?id=reviewer" class="w3-bar-item w3-button" id="reviewer">Faculty Reviewer</a>
+            
         </div>
+        <?php
+        // Set session variables
+        if (isset($_SESSION['loggedIn'])) {
+        // code to execute if the user is logged in
+        $name = $_SESSION["name"];
+        $email = $_SESSION["email"];
+        $result = '<div style="position:absolute; bottom:-20px; left:-5px;">logged in as: ' .$name. ' Email: '.$email.'</div>';
+        echo '<i class="far fa-address-card" style="font-size:48px;color:red;position:relative; left:-720px;"></i>';
+        //echo $result, $name;
+        echo $result;
+        
+        //echo("Logged in as: ".$_SESSION['name']);
+           
+        } else {
+        // code to execute if the user is not logged in
+            echo '<i class="far fa-address-card" style="font-size:36px;position:relative; left:-700px;"></i>';
+        }
+        ?>     
     </header>
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-32" id="about">

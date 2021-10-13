@@ -1,10 +1,26 @@
 <?php
+// Start the session
+session_start();
+?>
+
+<?php
 
 $title = 'Administrator Dashboard';
 $layout = 'admin/_layout.php';
 $allSet = true;
 ?>
-
+<?php
+if (isset($_SESSION['loggedIn'])) {
+    // code to execute if the user is logged in
+    echo '<i class="far fa-address-card" style="font-size:48px;color:red"></i>';
+    printf("Logged in as: ". $_SESSION['name']);
+    
+    
+} else {
+    // code to execute if the user is not logged in
+    echo '<i class="far fa-address-card" style="font-size:36px"></i>';
+}
+?>
 <h1>Administrator Dashboard</h1>
 
 <?php

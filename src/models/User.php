@@ -31,7 +31,6 @@ class User extends Model
         $user->id = HTTP::session('id');
         $user->name = HTTP::session('name');
         $user->email = HTTP::session('email');
-
         return $user;
     }
 
@@ -74,6 +73,7 @@ class User extends Model
         $_SESSION['id'] = $id;
         $_SESSION['name'] = $name;
         $_SESSION['email'] = $email;
+        $_SESSION["loggedIn"] = true;
 
         $user = self::current();
 
