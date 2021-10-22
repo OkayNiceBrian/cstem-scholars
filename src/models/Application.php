@@ -28,7 +28,7 @@ class Application extends Model
 
     public $name, $email, $title, $major, $gpa, $graduationDate, $advisorName, $advisorEmail, $description,
         $timeline, $justification, $totalBudget, $requestedBudget, $fundingSources, $studentID, $periodID,
-        $status, $budgetTable, $amountAwarded;
+        $status, $budgetTable, $amountAwarded, $dateSubmitted;
 
     private $hasAgreedToTerms = false;
 
@@ -66,7 +66,8 @@ class Application extends Model
             'status',
             'attachment',
             'budgetTable',
-            'amountAwarded'
+            'amountAwarded',
+            'dateSubmitted'
         ];
 
         parent::__construct($form, $fillGuardedColumns);

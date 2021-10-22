@@ -37,6 +37,7 @@ $application ??= new Application(
 
 if (HTTP::post('submit') && $application->status == 'draft') {
     $application->status = 'submitted';
+    $application->dateSubmitted = date("Y-m-d");
 }
 
 $form = new Form($application);

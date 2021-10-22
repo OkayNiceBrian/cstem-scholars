@@ -175,7 +175,7 @@
                 </label>
             </div>
 
-            <div class="section"><span>7</span>Budget</div>
+            <div class="section"><span>5</span>Budget</div>
             <div class="inner-wrap">
                 <label>
                     Describe your budget and planned spending (2000 characters max)
@@ -228,7 +228,7 @@
                 </table>
             </div>
 
-            <div class="section"><span>8</span>Terms and Conditions</div>
+            <div class="section"><span>6</span>Terms and Conditions</div>
             <div class="inner-wrap">
                 <p>
                     Awards shall only be spent on allowable expenses as defined in the application. Receipts must be
