@@ -12,6 +12,7 @@ class Mail
         $mail->addAddress($to);
 
         $mail->isSMTP();
+        $mail->Mailer = "smtp";
         $mail->isHTML(true);
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
@@ -20,13 +21,18 @@ class Mail
         $mail->Username = SMTP_USERNAME;
         $mail->Password = SMTP_PASSWORD;
         $mail->Subject = $subject;
-        $mail->Body = $body;
+        //$mail->Body = $body;
+        $mail->msgHTML($body);
 
         return $mail;
     }
 
     public static function send($to, $subject, $body)
     {
-        self::prepare($to, $subject, $body)->send();
+        if (!self::prepare($to, $subject, $body)->send()) {
+            echo "Error while sending Email.";
+        } else {
+            echo "Email sent successfully.";
+        }
     }
 }
