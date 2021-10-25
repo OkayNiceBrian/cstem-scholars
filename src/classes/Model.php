@@ -155,6 +155,14 @@ abstract class Model
         $columns = array_intersect($columns, array_keys($form));
 
         foreach ($columns as $f) {
+            
+            // Sanitize User input
+            if ($f == 'email' || $f == 'advisorEmail') {
+                $form[$f] = filter_var($form[$f], FILTER_SANITIZE_EMAIL);
+            } else {
+                $form[$f] = filter_var($form[$f], FILTER_SANITIZE_STRING);
+            }
+            
             $this->$f = $form[$f];
         }
 
