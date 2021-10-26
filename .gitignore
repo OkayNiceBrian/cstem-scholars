@@ -9,3 +9,4 @@ ssh info.txt
 .phpunit.result.cache
 src/phpCAS.log
 src/public/phpCAS.log
+docker/config.php
