@@ -123,9 +123,9 @@ class DB
         $columns = implode(', ', $columns);
 
         return self::execute(
-                "UPDATE $table SET $columns WHERE $where",
-                array_merge(array_values($values), $params)
-            ) > 0;
+            "UPDATE $table SET $columns WHERE $where",
+            array_merge(array_values($values), $params)
+        ) > 0;
     }
 
     // Returns number of deleted records
@@ -169,5 +169,4 @@ class DB
 
         return "($columns) VALUES ($valuePlaceholders)";
     }
-
 }
