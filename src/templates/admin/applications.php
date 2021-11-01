@@ -42,6 +42,7 @@ helper('money');
         <th>Student Name</th>
         <th>Title</th>
         <th>Status</th>
+        <th>Date Submitted</th>
         <th>Award</th>
     </tr>
 
@@ -51,6 +52,7 @@ helper('money');
             <td><?= e($a->name) ?></td>
             <td><?= HTML::link("../admin/applications.php?id={$a->id}", e($a->title)) ?></td>
             <td><?= applicationStatus($a) ?></td>
+            <td><?= e($a->dateSubmitted) ?></td>
             <td><?= $a->amountAwarded ? usd($a->amountAwarded) : '<span class="na">N/A</span>' ?></td>
         </tr>
     <?php

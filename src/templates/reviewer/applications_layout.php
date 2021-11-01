@@ -17,6 +17,7 @@ echo template('switch_roles.php', ['currentRole' => $currentRole]);
         <th>Advisor</th>
         <th>Status</th>
         <th>Date Submitted</th>
+        <th>Date Approved</th>
     </thead>
 
     <?php
@@ -29,6 +30,7 @@ echo template('switch_roles.php', ['currentRole' => $currentRole]);
             <td><?= e($a->advisorName) ?></td>
             <td><?= applicationStatus($a) ?></td>
             <td><?= e($a->dateSubmitted) ?></td>
+            <td><?= e($a->dateApproved) ?></td>
         </tr>
     <?php
     } ?>
