@@ -25,7 +25,7 @@ define('DB_CONNECTION_STRING', 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME);
 define('SMTP_HOST', 'smtp.gmail.com');
 define('SMTP_PORT', 587);
 define('SMTP_USERNAME', 'brianjackson1224@gmail.com');
-define('SMTP_PASSWORD', 'lwtnuwslofcbjuev');
+define('SMTP_PASSWORD', '');
 define('SMTP_FROM_EMAIL', 'noreply@ewu.edu');
 define('SMTP_FROM_NAME', 'EWU CSTEM Scholars');
 
