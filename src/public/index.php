@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +15,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="icon" href="favicon.png" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
 
@@ -28,6 +34,26 @@
         <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle" style="bottom:-16px">
             <a href="login.php?id=student" class="w3-bar-item w3-button" id="student">LOGIN</a>
         </div>
+        <?php
+        // Set session variables
+        if (isset($_SESSION['loggedIn'])) {
+        // code to execute if the user is logged in
+            $name = $_SESSION["name"];
+            $email = $_SESSION["email"];
+            $username = '<div style="position:absolute; bottom:-22px; left:-5px; font-size:20px; font-family:Courier New">User: ' .$name. '</div>';
+            $emailview = '<div style="position:absolute; bottom:-50px; left:-5px; font-size:20px; font-family:Courier New">Email: '.$email.'</div>';
+        
+            echo '<i class="far fa-address-card" style="font-size:48px;color:red;position:relative; left:-730px;"></i>';
+            //echo $result, $name;
+            echo $username;
+            //echo
+            echo $emailview;
+            //echo("Logged in as: ".$_SESSION['name']);
+        } else {
+        // code to execute if the user is not logged in
+            echo '<i class="far fa-address-card" style="font-size:36px;position:relative; left:-700px;"></i>';
+        }
+        ?>     
     </header>
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-32" id="about">

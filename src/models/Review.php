@@ -26,7 +26,7 @@ class Review extends Model
             'q4' => v::intVal()->between(0, 3)->setName('Question 4'),
             'q5' => v::intVal()->between(0, 3)->setName('Question 5'),
             'q6' => v::intVal()->between(0, 3)->setName('Question 6'),
-            'fundingRecommended' => v::boolVal()
+            'fundingRecommended' => v::intVal()->setName('Question 7')
         ];
 
         $this->guarded = [
