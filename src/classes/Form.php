@@ -138,7 +138,7 @@ class Form
         $attributes['value'] = $value;
 
         if ($value == $this->value($name)) {
-            $attributes[] = 'checked';
+            $attributes[] = '';
         }
 
         return $this->input('radio', $name, $attributes);
