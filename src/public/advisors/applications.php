@@ -92,6 +92,7 @@ if ($c->action() == 'update' && HTTP::post('buttonName') == "accept") {
     );
 
     $application->status = 'pending_review';
+    $application->dateApproved = date("Y-m-d");
     $application->save(false);
 
     // TODO: handle errors with a message instead of just redirecting no matter what

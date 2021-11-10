@@ -45,6 +45,8 @@ create table `Application`
     `status`          varchar(30)    not null,
     `amountAwarded`   decimal(10, 2) null,
     `dateSubmitted`   varchar(10)    null,
+    `dateApproved`    varchar(10)    null,
+
     foreign key (advisorEmail) references User (email)
         on update cascade
         on delete set null,
