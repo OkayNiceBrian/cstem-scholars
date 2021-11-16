@@ -18,56 +18,62 @@ $application = $review->application();
     <div class="form">
         <p>Does the project demonstrate experiential learning in a CSTEM discipline?</p>
         <p>
-            <label><?= $form->radio('q1', 0) ?> 0</label>
             <label><?= $form->radio('q1', 1) ?> 1</label>
             <label><?= $form->radio('q1', 2) ?> 2</label>
             <label><?= $form->radio('q1', 3) ?> 3</label>
+            <label><?= $form->radio('q1', 4) ?> 4</label>
+            <label><?= $form->radio('q1', 5) ?> 5</label>
             <br>
         </p>
 
         <p>Is the budget justified in the project description, including realistic?</p>
         <p>
-            <label><?= $form->radio('q2', 0) ?> 0</label>
             <label><?= $form->radio('q2', 1) ?> 1</label>
             <label><?= $form->radio('q2', 2) ?> 2</label>
             <label><?= $form->radio('q2', 3) ?> 3</label>
+            <label><?= $form->radio('q2', 4) ?> 4</label>
+            <label><?= $form->radio('q2', 5) ?> 5</label>
             <br>
         </p>
 
         <p>Are the proposed methods appropriate to achieve the goals?</p>
         <p>
-            <label><?= $form->radio('q3', 0) ?> 0</label>
             <label><?= $form->radio('q3', 1) ?> 1</label>
             <label><?= $form->radio('q3', 2) ?> 2</label>
             <label><?= $form->radio('q3', 3) ?> 3</label>
+            <label><?= $form->radio('q3', 4) ?> 4</label>
+            <label><?= $form->radio('q3', 5) ?> 5</label>
             <br>
         </p>
 
         <p>Is the timeline proposed reasonable?(Too little? Too much?)</p>
         <p>
-            <label><?= $form->radio('q4', 0) ?> 0</label>
             <label><?= $form->radio('q4', 1) ?> 1</label>
             <label><?= $form->radio('q4', 2) ?> 2</label>
             <label><?= $form->radio('q4', 3) ?> 3</label>
+            <label><?= $form->radio('q4', 4) ?> 4</label>
+            <label><?= $form->radio('q4', 5) ?> 5</label>
             <br>
         </p>
 
         <p>Is the project well explained (including rationale) and justified?</p>
         <p>
-            <label><?= $form->radio('q5', 0) ?> 0</label>
             <label><?= $form->radio('q5', 1) ?> 1</label>
             <label><?= $form->radio('q5', 2) ?> 2</label>
             <label><?= $form->radio('q5', 3) ?> 3</label>
+            <label><?= $form->radio('q5', 4) ?> 4</label>
+            <label><?= $form->radio('q5', 5) ?> 5</label>
             <br>
         </p>
 
         <p>Does the budget only include eligible activities (supplies, equipment, field travel,
             conference travel)?</p>
         <p>
-            <label><?= $form->radio('q6', 0) ?> 0</label>
             <label><?= $form->radio('q6', 1) ?> 1</label>
             <label><?= $form->radio('q6', 2) ?> 2</label>
             <label><?= $form->radio('q6', 3) ?> 3</label>
+            <label><?= $form->radio('q6', 4) ?> 4</label>
+            <label><?= $form->radio('q6', 5) ?> 5</label>
             <br>
         </p>
 
