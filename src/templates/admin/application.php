@@ -90,7 +90,7 @@ foreach ($application->reviews() as $review) { ?>
             <?php
             foreach (Review::QUESTIONS as $i => $q) { ?>
                 <p><?= $q ?></p>
-                <blockquote><?= e($review->{'q' . ($i + 1)}) ?> / 3</blockquote>
+                <blockquote><?= e($review->{'q' . ($i + 1)}) ?> / 5</blockquote>
                 <?php
             } ?>
 
@@ -100,7 +100,13 @@ foreach ($application->reviews() as $review) { ?>
             </blockquote>
 
             <p>Recommend funding?</p>
-            <blockquote><?= $review->fundingRecommended ? 'Yes' : 'No' ?></blockquote>
+            <blockquote> <?php if ($review->fundingRecommended == 1) {
+                                echo $review->fundingRecommended = 'Yes';
+                            }else {
+                                echo $review->fundingRecommended = 'No';
+                            }
+                        ?>
+            </blockquote>
 
             <?php
         } ?>

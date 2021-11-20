@@ -20,15 +20,15 @@ class Review extends Model
     {
         $this->fillable = [
             'comments' => v::length(null, 2000)->setName('Comments'),
-            'q1' => v::intVal()->between(0, 3)->setName('Question 1'),
-            'q2' => v::intVal()->between(0, 3)->setName('Question 2'),
-            'q3' => v::intVal()->between(0, 3)->setName('Question 3'),
-            'q4' => v::intVal()->between(0, 3)->setName('Question 4'),
-            'q5' => v::intVal()->between(0, 3)->setName('Question 5'),
-            'q6' => v::intVal()->between(0, 3)->setName('Question 6'),
-            'fundingRecommended' => v::intVal()->setName('Question 7')
+            'q1' => v::notBlank()->between(1, 5)->setName('Question 1'),
+            'q2' => v::notBlank()->between(1, 5)->setName('Question 2'),
+            'q3' => v::notBlank()->between(1, 5)->setName('Question 3'),
+            'q4' => v::notBlank()->between(1, 5)->setName('Question 4'),
+            'q5' => v::notBlank()->between(1, 5)->setName('Question 5'),
+            'q6' => v::notBlank()->between(1, 5)->setName('Question 6'),
+            'fundingRecommended' => v::notBlank()->setName('Question 7')
         ];
-
+        
         $this->guarded = [
             'reviewerID',
             'applicationID',
@@ -47,5 +47,9 @@ class Review extends Model
     public function reviewer()
     {
         return User::get($this->reviewerID);
+    }
+    public function message() {
+        $message = "this is working";
+        return $message;
     }
 }

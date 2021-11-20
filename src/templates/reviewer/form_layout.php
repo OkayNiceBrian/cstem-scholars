@@ -80,7 +80,7 @@ $application = $review->application();
         <p>Based on eligibility and quality scores, would you recommend funding this project?</p>
         <p>
             <label><?= $form->radio('fundingRecommended', 1) ?> Yes</label>
-            <label><?= $form->radio('fundingRecommended', 0) ?> No</label>
+            <label><?= $form->radio('fundingRecommended', 2) ?> No</label>
             <br>
         </p>
 
