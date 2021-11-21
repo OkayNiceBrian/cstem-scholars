@@ -34,4 +34,7 @@ echo template('switch_roles.php', ['currentRole' => $currentRole]);
         </tr>
     <?php
     } ?>
+
+    <p><a href="../reviewers/download.php">CSV</a></p>
+
 </table>

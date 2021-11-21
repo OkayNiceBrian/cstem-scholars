@@ -5,9 +5,11 @@ helper('application_status_label');
 
 <table>
     <thead>
-    <th style="width: 20%">Student Name</th>
-    <th style="width: 55%">Title</th>
-    <th style="width: 25%">Status</th>
+    <th>Student Name</th>
+    <th>Title</th>
+    <th>Status</th>
+    <th>Date Submitted</th>
+    <th>Date Approved</th>
     </thead>
 
     <?php
@@ -16,7 +18,10 @@ helper('application_status_label');
             <td><?= e($a->name) ?></td>
             <td><?= HTML::link("../admin/applications.php?id={$a->id}", e($a->title)) ?></td>
             <td><?= applicationStatus($a) ?></td>
+            <td><?= e($a->dateSubmitted) ?></td>
+            <td><?= e($a->dateApproved) ?></td>
         </tr>
     <?php
     } ?>
+
 </table>

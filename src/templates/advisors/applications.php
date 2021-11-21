@@ -36,6 +36,9 @@ if ($period == null) { ?>
         <?php
             }
         } ?>
+
+        <p><a href="../advisors/download.php">CSV</a></p>
+
     </table>
 <?php
 } ?>

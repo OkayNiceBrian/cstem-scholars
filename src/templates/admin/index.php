@@ -47,7 +47,7 @@ if (!Period::current()) { ?>
 if ($ready) { ?>
     <?php
     $allSet = false; ?>
-    <h2>Applications Ready for Your Final Decision</h2>
+    <h2>Applications Ready for Your Final Decision <a href="../admin/download.php">CSV</a></p></h2>
     <?= template('applications_table.php', ['applications' => $ready]) ?>
 <?php
 } ?>
