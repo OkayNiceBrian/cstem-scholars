@@ -58,6 +58,8 @@ helper('money');
     <?php
     } ?>
 
+<p><a href="../admin/download_all.php">CSV</a></p>
+
     <tr>
         <td colspan="3"></td>
         <td><strong><?= $sum ? usd($sum) : '' ?></strong></td>
