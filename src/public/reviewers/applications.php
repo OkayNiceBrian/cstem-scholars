@@ -28,6 +28,18 @@ if ($c->action() == 'update') {
         #update the applications status, save, then redirect back to the list of applications
         $application->status = 'reviewed';
         $application->save(false);
+        Mail::send(
+           ADMIN_EMAIL,
+            'CSTEM Scholars Grant Application In need of Admin Approval',
+            HTML::template(
+                'emails/application_reviewer_accepted.php',
+                [
+                    'application' => $application,
+                    'period' => $period,
+                    'review' => $review,
+                ]
+            )
+        );
         HTTP::redirect('../reviewers/applications.php');
     }
 }
