@@ -3,9 +3,8 @@
 $layout = 'emails/layout.php';
 ?>
 
-    <p>Hello <?= e($review->reviewer()->name) ?>, </p>
     <p>
-        A CSTEM Scholars application is available for your review. Go to
+        A CSTEM Scholars application is available for review. Have a reviewer go to
         <?= HTML::link(BASE_URL . '/reviewers/', BASE_URL . '/reviewers/') ?>
         to review it. Here are the details:
     </p>

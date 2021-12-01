@@ -58,10 +58,12 @@ helper('money');
     <?php
     } ?>
 
-<p><a href="../admin/download_all.php">CSV</a></p>
+
 
     <tr>
         <td colspan="3"></td>
         <td><strong><?= $sum ? usd($sum) : '' ?></strong></td>
     </tr>
 </table>
+
+<p><a href="../admin/download_all.php">Download All Applications</a></p>

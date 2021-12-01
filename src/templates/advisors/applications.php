@@ -37,8 +37,10 @@ if ($period == null) { ?>
             }
         } ?>
 
-        <p><a href="../advisors/download.php">CSV</a></p>
+        
 
     </table>
+
+    <p><a href="../advisors/download.php">Download All Applications</a></p>
 <?php
 } ?>
