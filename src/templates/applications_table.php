@@ -25,3 +25,5 @@ helper('application_status_label');
     } ?>
 
 </table>
+
+<p><a href="../admin/download.php">Download All Applications</a></p>

@@ -35,6 +35,8 @@ echo template('switch_roles.php', ['currentRole' => $currentRole]);
     <?php
     } ?>
 
-    <p><a href="../reviewers/download.php">CSV</a></p>
+    
 
 </table>
+
+<p><a href="../reviewers/download.php">Download All Applications</a></p>

@@ -30,8 +30,8 @@
         if ($user->isAdvisor()) { ?>
             <p>Advisor</p>
             <ul>
-                <li><a href="../advisors/applications.php"><i class='far fa-user-circle' style='font-size:36px'></i> User: <?php echo $name ?></a></li>
-                <li><a href="../advisors/applications.php"><i class='fas fa-file-export' style='font-size:36px'></i> Email: <?php echo $email ?></a></li>
+                <li><a href="../advisors/applications.php"><i class='far fa-user-circle' style='font-size:16px; margin-left:4px; margin-right:6px;'></i> User: <?php echo $name ?></a></li>
+                <!-- <li><a href="../advisors/applications.php"><i class='fas fa-file-export' style='font-size:16px; left:4px'></i> Email: <?php echo $email ?></a></li> -->
                 <li><a href="../advisors/applications.php"><i class="icon check-square-light"></i>Accept Applications</a>
                 </li>
             </ul>
@@ -42,8 +42,8 @@
         if ($user->isReviewer()) { ?>
             <p>Reviewer</p>
             <ul>
-                <li><a href="../reviewers/applications.php"><i class='far fa-user-circle' style='font-size:36px'></i> User: <?php echo $name ?></a></li>
-                <li><a href="../reviewers/applications.php"><i class='fas fa-file-export' style='font-size:36px'></i> Email: <?php echo $email ?></a></li>
+                <li><a href="../reviewers/applications.php"><i class='far fa-user-circle' style='font-size:16px; margin-left:4px; margin-right:6px;'></i> User: <?php echo $name ?></a></li>
+                <!-- <li><a href="../reviewers/applications.php"><i class='fas fa-file-export' style='font-size:36px'></i> Email: <?php echo $email ?></a></li> -->
                 <li><a href="../reviewers/applications.php"><i class="icon list-light"></i>Review Applications</a></li>
             </ul>
         <?php
@@ -53,8 +53,8 @@
         if ($user->isAdmin()) { ?>
             <p>Administrator</p>
             <ul>
-                <li><a href="../admin/"><i class='far fa-user-circle' style='font-size:36px'></i> User: <?php echo $name ?></a></li>
-                <li><a href="../admin/"><i class='fas fa-file-export' style='font-size:36px'></i> Email: <?php echo $email ?></a></li>
+                <li><a href="../admin/"><i class='far fa-user-circle' style='font-size:16px; margin-left:4px; margin-right:6px;'></i> User: <?php echo $name ?></a></li>
+                <!-- <li><a href="../admin/"><i class='fas fa-file-export' style='font-size:36px'></i> Email: <?php echo $email ?></a></li> -->
                 <li><a href="../admin/"><i class="icon grid-light"></i>Dashboard</a></li>
                 <li><a href="../admin/periods.php"><i class="icon calendar-light"></i>Periods</a></li>
                 <li><a href="../admin/applications.php"><i class="icon file-text-light"></i>Applications</a></li>

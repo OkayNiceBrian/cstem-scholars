@@ -36,23 +36,20 @@ session_start();
         </div>
         <?php
         // Set session variables
-        if (isset($_SESSION['loggedIn'])) {
+        //if (isset($_SESSION['loggedIn'])) {
         // code to execute if the user is logged in
-            $name = $_SESSION["name"];
-            $email = $_SESSION["email"];
-            $username = '<div style="position:absolute; bottom:-22px; left:-5px; font-size:20px; font-family:Courier New">User: ' .$name. '</div>';
-            $emailview = '<div style="position:absolute; bottom:-50px; left:-5px; font-size:20px; font-family:Courier New">Email: '.$email.'</div>';
+            //$name = $_SESSION["name"];
+            //$email = $_SESSION["email"];
+            //$username = '<div style="position:absolute; bottom:-22px; left:-5px; font-size:20px; font-family:Courier New">User: ' .$name. '</div>';
+            //$emailview = '<div style="position:absolute; bottom:-50px; left:-5px; font-size:20px; font-family:Courier New">Email: '.$email.'</div>';
         
-            echo '<i class="far fa-address-card" style="font-size:48px;color:red;position:relative; left:-730px;"></i>';
-            //echo $result, $name;
-            echo $username;
-            //echo
-            echo $emailview;
-            //echo("Logged in as: ".$_SESSION['name']);
-        } else {
+            //echo '<i class="far fa-address-card" style="font-size:48px;color:red;position:relative; left:-730px;"></i>';
+            //echo $username;
+            //echo $emailview;
+        //} else {
         // code to execute if the user is not logged in
-            echo '<i class="far fa-address-card" style="font-size:36px;position:relative; left:-700px;"></i>';
-        }
+            //echo '<i class="far fa-address-card" style="font-size:36px;position:relative; left:-700px;"></i>';
+        //}
         ?>     
     </header>
     <!-- Container (About Section) -->
@@ -193,7 +190,7 @@ session_start();
         </div>
         <br>
         <ul class="facts">
-            <li class="list-inline-item text-muted">&copy; 2018 Eastern Washington University</li>
+            <li class="list-inline-item text-muted">&copy; 2021 Eastern Washington University</li>
             |
             <li class="priv">
                 <a href="https://www.ewu.edu/privacy-policy" style="text-decoration: none;">Privacy Policy</a>
