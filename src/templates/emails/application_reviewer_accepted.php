@@ -13,4 +13,3 @@ $layout = 'emails/layout.php';
     <p><?= e($application->title) ?></p>
 
 <?= HTML::template('application_details.php', $application) ?>
-<?= $review ?>

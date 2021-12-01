@@ -63,7 +63,7 @@ if ($c->action() == 'update' && HTTP::post('buttonName') == "accept") {
             $reviewerComment = "<p>Your advisor left the following comment on it: " . e($reviewerComment) . "</p>";
         }
         Mail::send(
-            $review->reviewerID,
+            ADMIN_EMAIL,
             'CSTEM Scholars Grant Application In need of Review',
             HTML::template(
                 'emails/application_advisor_accepted.php',

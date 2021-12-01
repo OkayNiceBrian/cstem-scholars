@@ -35,8 +35,6 @@ if ($c->action() == 'update') {
                 'emails/application_reviewer_accepted.php',
                 [
                     'application' => $application,
-                    'period' => $period,
-                    'review' => $review,
                 ]
             )
         );
