@@ -22,6 +22,7 @@ if ($period == null) { ?>
             <th>Title</th>
             <th>Status</th>
             <th>Date Submitted</th>
+            <th>Download</th>
         </tr>
 
         <?php
@@ -32,6 +33,7 @@ if ($period == null) { ?>
                     <td><?= HTML::link("../advisors/applications.php?id={$a->id}", e($a->title)) ?></td>
                     <td><?= applicationStatus($a) ?></td>
                     <td><?= e($a->dateSubmitted) ?></td>
+                    <td><?= HTML::link("../advisors/download_application.php?id={$a->id}", e("Download")) ?></td>
                 </tr>
         <?php
             }

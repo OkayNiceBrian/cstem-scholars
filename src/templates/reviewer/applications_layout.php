@@ -18,6 +18,7 @@ echo template('switch_roles.php', ['currentRole' => $currentRole]);
         <th>Status</th>
         <th>Date Submitted</th>
         <th>Date Approved</th>
+        <th>Download</th>
     </thead>
 
     <?php
@@ -31,6 +32,7 @@ echo template('switch_roles.php', ['currentRole' => $currentRole]);
             <td><?= applicationStatus($a) ?></td>
             <td><?= e($a->dateSubmitted) ?></td>
             <td><?= e($a->dateApproved) ?></td>
+            <td><?= HTML::link("../reviewers/download_application.php?id={$a->id}", e("Download")) ?></td>
         </tr>
     <?php
     } ?>

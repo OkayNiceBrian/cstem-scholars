@@ -44,6 +44,7 @@ helper('money');
         <th>Status</th>
         <th>Date Submitted</th>
         <th>Award</th>
+        <th>Download</th>
     </tr>
 
     <?php
@@ -54,6 +55,7 @@ helper('money');
             <td><?= applicationStatus($a) ?></td>
             <td><?= e($a->dateSubmitted) ?></td>
             <td><?= $a->amountAwarded ? usd($a->amountAwarded) : '<span class="na">N/A</span>' ?></td>
+            <td><?= HTML::link("../admin/download_application_any.php?id={$a->id}", e("Download")) ?></td>
         </tr>
     <?php
     } ?>

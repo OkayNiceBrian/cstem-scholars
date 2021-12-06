@@ -107,23 +107,23 @@ session_start();
     </div>
     <!-- Footer -->
     <footer class="foot w3-center w3-dark-grey w3-padding-32">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Top</a>
         <br><br>
         <div class="social-media">
             <a href="https://www.facebook.com/ewueagles/">
-                <i class="fa fa-facebook" style="font-size: 1.80em"></i>
+                <i class="fab fa-facebook" style="font-size: 1.80em"></i>
             </a>
             <a href="https://twitter.com/ewueagles">
-                <i class="fa fa-twitter" style="font-size: 1.80em"></i>
+                <i class="fab fa-twitter" style="font-size: 1.80em"></i>
             </a>
             <a href="https://www.instagram.com/easternwashingtonuniversity/">
-                <i class="fa fa-instagram" style="font-size: 1.7em"></i>
+                <i class="fab fa-instagram" style="font-size: 1.7em"></i>
             </a>
             <a href="https://www.youtube.com/user/ewuvideo">
-                <i class="fa fa-youtube-play" style="font-size: 1.6em"></i>
+                <i class="fab fa-youtube" style="font-size: 1.6em"></i>
             </a>
             <a href="https://www.linkedin.com/school/eastern-washington-university/">
-                <i class="fa fa-linkedin" style="font-size: 1.7em"></i>
+                <i class="fab fa-linkedin" style="font-size: 1.7em"></i>
             </a>
         </div>
         <div class="row-links">
@@ -158,7 +158,7 @@ session_start();
             </ul>
             <ul class="middle" style="list-style-type:none">
                 <li class="a">
-                    <a href="https://sites.ewu.edu/foundation/" style="text-decoration: none;">EWU Foundation</a>
+                    <a href="https://www.ewu.edu/give/" style="text-decoration: none;">EWU Foundation</a>
                 </li>
                 <li class="b">
                     <a href="https://sites.ewu.edu/diversityandinclusion/" style="text-decoration: none;">Diversity</a>
@@ -175,7 +175,7 @@ session_start();
                     <a href="https://www2.ewu.edu/library" style="text-decoration: none;">EWU Libraries</a>
                 </li>
                 <li class="c">
-                    <a href="https://www2.ewu.edu/site-map?filter=a" style="text-decoration: none;">Site Map</a>
+                    <a href="https://www.ewu.edu/apply/visit-ewu/maps/" style="text-decoration: none;">Site Map</a>
                 </li>
             </ul>
             <ul class="farright" style="list-style-type:none">
